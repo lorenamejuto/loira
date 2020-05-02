@@ -108,6 +108,13 @@ h5, .ribbon-content {
     font-family: 'ralewaybold';
     letter-spacing: 1.8px;
 }
+h6 {
+    font-family: 'ralewayextrabold';
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000;
+    padding-top: 30px;
+}
 .centrado {
     display: flex;
     align-items: center;
@@ -547,4 +554,34 @@ h5, .ribbon-content {
     letter-spacing: 3px;
     text-align: center;
 }
+.firma {
+    text-align: right;
+}
+.firma h1 {
+    font-size: 40px;
+    color: #000;
+}
 /*Seccion nosotras*/
+/*Sección contacto*/
+.contacto {
+    background-image: url(../images/fondo-contacto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contacto h1 {
+    color: #000;
+    padding-bottom: 25px;
+}
+.contacto a {
+    color: #000;
+    font-weight: 600;
+}
+.redes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.redes img {
+    padding-right: 5px;
+}
+/*Fin de sección contacto*/
