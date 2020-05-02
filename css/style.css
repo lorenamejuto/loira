@@ -1,0 +1,519 @@
+@font-face {
+    font-family: 'hestericaregular';
+    src: url('../fonts/hesterica-webfont.woff2') format('woff2'),
+         url('../fonts/hesterica-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('../fonts/raleway-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../fonts/raleway-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+input:focus, textarea:focus, button:focus, a:focus {
+    outline: none;
+}
+figure {
+    margin: 0;
+}
+img {
+    max-width: 100%
+}
+section {
+    margin: 0;
+}
+body {
+    font-family: 'ralewaymedium';
+    font-size: 13px;
+}
+p {
+    font-size: 13px;
+}
+h1 {
+    font-family: 'hestericaregular';
+    font-size: 76px;
+    color: #fff;
+}
+h2 {
+    font-family: 'ralewaybold';
+    font-size: 18px;
+    color: #231f20;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: 'ralewaybold';
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #231f20;
+}
+h4 {
+    font-size: 40px;
+    color: #fff; 
+}
+h5 {
+    font-size: 30px;
+    color: #231f20;
+    background-color: #ffdb00;
+}
+.centrado {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.formato-titulos {
+    margin: 0 10px;
+}
+.alineacion-baja {
+    align-items: flex-end;
+}
+.espacio {
+    padding-top: 35px;
+}
+/*Navbar*/
+
+.navbar {
+    padding: 0 20px 5px;
+    background-color: #fff;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.navbar-collapse ul {
+    margin: 0;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 35px;
+    padding-right: 15px;
+    padding-left: 0;
+    letter-spacing: 3px;
+}
+.nav-link span {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-item a {
+    color: #231f20;
+}
+.nav-item:last-child .nav-link, .nav-item:first-child .nav-link  {
+    margin-left: 0;
+}
+.nav-item:nth-child(7) .nav-link {
+    margin-right: 0;
+}
+.nav-link.active {
+    font-weight: 700;
+}
+.nav-link.active:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 4px;
+}
+.navbar-toggler-icon {
+  background-image: url(../images/menu.svg);
+}
+.navbar-toggler {
+  padding: 0;
+}
+/*Fin Navbar*/
+
+/*Carousel Principal*/
+.carousel {
+    padding-top: 107px;
+}
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1;
+    width: 46px;
+    height: 55px;
+    top: 50%;
+  z-index: 9
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 46px;
+    height: 46px;
+}
+.carousel-control-prev {
+    left: 50px;
+}
+.carousel-control-next {
+    right: 50px;
+}
+.carousel-control-prev-icon {
+    background-image: url(../images/flecha-izq.png);
+}
+.carousel-control-next-icon {
+    background-image: url(../images/flecha-dere.png);
+}
+.carousel-indicators {
+  right: inherit;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-right: 0;
+  margin-left: 0;
+  padding: 8px 20px;
+  bottom: 0px;
+}
+.carousel-indicators li {
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    opacity: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.carousel-indicators .active {
+    background-color: #fff;
+}
+.carousel-frase {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  text-align: center;
+  max-width: 800px;
+}
+.carousel-frase h1 {
+    font-size: 90px;
+} 
+.carousel-frase h4 {
+    margin-top: -25px;
+    padding-left: 155px;
+    letter-spacing: 4px;
+}
+.carousel-frase h5 {
+    display: inline-block;
+}
+/*Fin carousel Principal*/
+/*Sección productos*/
+.productos {
+    margin: 20px 0px;
+}
+.productos .formato-titulos {
+    padding-bottom: 75px;
+}
+.productos h2{
+    background-image: url(../images/fondo-productos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    text-align: center;
+    -webkit-box-shadow: 8px 9px 2px -3px rgba(203,131,163,0.77);
+    -moz-box-shadow: 8px 9px 2px -3px rgba(203,131,163,0.77);
+    box-shadow: 8px 9px 2px -3px rgba(203,131,163,0.77);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #fff;
+}
+.mb-3 {
+    display: flex;
+    justify-content: center;
+}
+/*Fin sección productos*/
+/*Sección caracteristicas*/
+.caracteristicas .formato-titulos {
+    background-image: url(../images/fondo-caracteristicas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px;
+    -webkit-box-shadow: 8px 9px 2px -3px rgba(30,92,141,1);
+    -moz-box-shadow: 8px 9px 2px -3px rgba(30,92,141,1);
+    box-shadow: 8px 9px 2px -3px rgba(30,92,141,1);
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+.caracteristicas h1 {
+    display: inline;
+    margin-right: 10px;
+}
+.caracteristicas h2 {
+    font-family: 'ralewaymedium';
+    font-size: 50px;
+    letter-spacing: 4px;
+    color: #fff;
+    display: inline;
+}
+.caracteristicas p {
+    letter-spacing: 1px;
+}
+.caracteristicas .texto-izquierdo {
+    text-align: end;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.caracteristicas .texto-derecho {
+    text-align: start;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+.caracteristicas .imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caracteristicas .imagenes:nth-child(2) {
+    padding-bottom: 20px;
+}
+.caracteristicas .imagenes .alineado {
+    padding-bottom: 80px;
+}
+.caracteristicas .alineacion-baja {
+    padding-bottom: 30px;
+}
+/*Sección Galeria*/
+.galeria {
+    padding-top: 50px;
+}
+.galeria article {
+    position: relative;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    margin-right: 3.5px;
+    margin-left: 3.5px;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 250px;
+    max-width: 260px;
+}
+.galeria article:hover {
+    opacity: .7;
+}
+.gallery-search {
+    position: absolute;
+    pointer-events: none;
+    top: calc(50% - 32.5px);
+    left: calc(50% - 32.5px);
+}
+.gallery-search:before {
+    display: block;
+    height: 65px;
+    width: 65px;
+    line-height: 62px;
+    text-align: center;
+    background-color: #231f20;
+    border-radius: 50%;
+    color: white;
+    font-size: 40px;
+}
+.galeria .galeria-uno {
+    background-image: url(../images/galeria-peq-1.jpg);
+}
+.galeria .galeria-dos {
+    background-image: url(../images/galeria-peq-1.jpg);
+}
+.galeria .galeria-tres {
+    background-image: url(../images/galeria-peq-1.jpg);
+}
+.galeria .galeria-cuatro {
+    background-image: url(../images/galeria-peq-1.jpg);
+}
+/*Fin de sección galeria*/
+/*Fin de sección caracteristicas*/
+/*Sección Tips*/
+.tips {
+    padding-top: 30px;
+}
+.tips p {
+    color: #000;
+}
+.tips h2{
+    background-image: url(../images/fondo-tips.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    text-align: center;
+    -webkit-box-shadow: 8px 8px 2px -3px rgba(208,117,43,1);
+    -moz-box-shadow: 8px 8px 2px -3px rgba(208,117,43,1);
+    box-shadow: 8px 8px 2px -3px rgba(208,117,43,1);
+    margin-bottom: 40px;
+}
+.semi-circulo {
+    text-align: center;
+    width: 350px; 
+    height: 175px; 
+    -moz-border-radius: 300px 300px 0 0;
+    -webkit-border-radius: 300px 300px 0 0;
+    border-radius: 300px 300px 0 0;
+    padding-top: 25px;
+    margin: 0 auto;
+}
+.semi-circulo h1{
+    color: #000;
+    margin-bottom: 0;
+    margin-left: -20px;
+}
+.semi-circulo h3 {
+    color: #000;
+    text-transform: lowercase;
+    font-size: 21px;
+    padding-left: 92px;
+    margin-top: 0;
+    letter-spacing: 4px;
+    margin-top: -2px;
+}
+.sec-amarillo .semi-circulo {
+    background-color: rgba(255, 219, 0, 0.4);
+}
+.sec-celeste .semi-circulo  {
+    background-color: #c2e6e6;
+}
+.cuidado-calzado {
+    margin-top: -20px;
+    background-image: url(../images/fondo-cuidado.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 70px;
+    text-align: center;
+}
+.cuidado-calzado span {
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.cuidado-calzado div h1 {
+    color: #000;
+    margin-top: -25px; 
+}
+.cuidado-calzado div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: start;
+}
+.cuidado-calzado div p {
+    padding-left: 10px;
+}
+.talle {
+    margin-top: -20px;
+    background-image: url(../images/fondo-talle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 70px 25px 70px;
+    text-align: center;    
+}
+.talle table {
+    width: 100%;
+}
+.talle td {
+   width: 25%;
+   text-align: center;
+   padding-top: 2px;
+   padding-bottom: 2px;
+}
+.fondo-blanco {
+    background-color: #fff;
+}
+/*Fin de sección Tips*/
+/*Seccion nosotras*/
+.univ-loria h1 {
+    color: #000;
+    display: inline-block;
+    font-size: 58px;
+    margin: 0;
+    margin-top: -15px;
+}
+.univ-loria h3 {
+    display: inline-block;
+    font-size: 21px;
+    letter-spacing: 3px;
+}
+.univ-loria {
+    display: inline-block;
+    background-image: url(../images/fondo-productos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    -webkit-box-shadow: 8px 9px 2px -3px rgba(203,131,163,0.77);
+    -moz-box-shadow: 8px 9px 2px -3px rgba(203,131,163,0.77);
+    box-shadow: 8px 9px 2px -3px rgba(203,131,163,0.77);
+    margin-bottom: 45px;
+}
+.texto-universo h5 {
+    background-color: inherit;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 10px 50px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+/*Seccion nosotras*/
