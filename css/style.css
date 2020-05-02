@@ -100,12 +100,13 @@ h3 {
 }
 h4 {
     font-size: 40px;
-    color: #fff; 
+    color: #fff;
 }
-h5 {
-    font-size: 30px;
+h5, .ribbon-content {
+    font-size: 18px;
     color: #231f20;
-    background-color: #ffdb00;
+    font-family: 'ralewaybold';
+    letter-spacing: 1.8px;
 }
 .centrado {
     display: flex;
@@ -191,27 +192,28 @@ h5 {
     padding-top: 107px;
 }
 .carousel-control-next, .carousel-control-prev {
-    opacity: 1;
-    width: 46px;
-    height: 55px;
-    top: 50%;
+  opacity: 1;
+  width: 46px;
+  height: 55px;
+  top: 50%;
+  transform: translateY(50%);
   z-index: 9
 }
 .carousel-control-next-icon, .carousel-control-prev-icon {
-    width: 46px;
-    height: 46px;
+  width: 51px;
+  height: 62px;
 }
 .carousel-control-prev {
-    left: 50px;
+  left: 50px;
 }
 .carousel-control-next {
-    right: 50px;
+  right: 50px;
 }
 .carousel-control-prev-icon {
-    background-image: url(../images/flecha-izq.png);
+  background-image: url(../images/flecha-izq.png);
 }
 .carousel-control-next-icon {
-    background-image: url(../images/flecha-dere.png);
+  background-image: url(../images/flecha-dere.png);
 }
 .carousel-indicators {
   right: inherit;
@@ -220,7 +222,7 @@ h5 {
   margin-right: 0;
   margin-left: 0;
   padding: 8px 20px;
-  bottom: 0px;
+  bottom: 0;
 }
 .carousel-indicators li {
     height: 9px;
@@ -246,15 +248,44 @@ h5 {
 }
 .carousel-frase h1 {
     font-size: 90px;
-} 
+}
 .carousel-frase h4 {
     margin-top: -25px;
     padding-left: 155px;
     letter-spacing: 4px;
 }
-.carousel-frase h5 {
-    display: inline-block;
+.carousel-frase-ribbon {
+  position: absolute;
+  bottom: -28px;
+  right: 48px;
 }
+.ribbon {
+ font-size: 16px !important;
+ display: inline-block;
+ position: relative;
+ background: #ffdb00;
+ text-align: center;
+ padding: 3px 0;
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: 0;
+ border: 17px solid #ffdb00;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -35px;
+ border-right-width: 9.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+
 /*Fin carousel Principal*/
 /*Sección productos*/
 .productos {
@@ -408,8 +439,8 @@ h5 {
 }
 .semi-circulo {
     text-align: center;
-    width: 350px; 
-    height: 175px; 
+    width: 350px;
+    height: 175px;
     -moz-border-radius: 300px 300px 0 0;
     -webkit-border-radius: 300px 300px 0 0;
     border-radius: 300px 300px 0 0;
@@ -451,7 +482,7 @@ h5 {
 }
 .cuidado-calzado div h1 {
     color: #000;
-    margin-top: -25px; 
+    margin-top: -25px;
 }
 .cuidado-calzado div {
     display: flex;
@@ -468,7 +499,7 @@ h5 {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px 70px 25px 70px;
-    text-align: center;    
+    text-align: center;
 }
 .talle table {
     width: 100%;
