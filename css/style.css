@@ -88,7 +88,8 @@ h1 {
 }
 h2 {
     font-family: 'ralewaybold';
-    font-size: 18px;
+    font-size: 17px;
+    letter-spacing: 1.5px;
     color: #231f20;
     text-transform: uppercase;
 }
@@ -114,6 +115,12 @@ h6 {
     text-transform: uppercase;
     color: #000;
     padding-top: 30px;
+}
+
+hr {
+  width: 55<%;
+  margin: 10px auto 15px auto;
+  border-top: 1px solid #231F20;
 }
 .centrado {
     display: flex;
@@ -299,22 +306,29 @@ h6 {
     margin: 20px 0px;
 }
 .productos .formato-titulos {
-    padding-bottom: 75px;
+    padding-bottom: 50px;
 }
 .productos h2{
     background-image: url(../images/fondo-productos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px;
+    padding: 7.5px;
     text-align: center;
-    -webkit-box-shadow: 8px 9px 2px -3px rgba(203,131,163,0.77);
-    -moz-box-shadow: 8px 9px 2px -3px rgba(203,131,163,0.77);
-    box-shadow: 8px 9px 2px -3px rgba(203,131,163,0.77);
+    -webkit-box-shadow: 4px 4px 0 0 rgba(203,131,163,1);
+    -moz-box-shadow: 4px 4px 0 0 rgba(203,131,163,1);
+    box-shadow: 4px 4px 0 0 rgba(203,131,163,1);
+}
+.productos h3 {
+  letter-spacing: 1.3px;
+  margin-bottom: 5px;
+}
+.productos p {
+  margin-bottom: 8px;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     background-color: #fff;
 }
-.nav-link {
+.nav-pills .nav-link {
   padding: 0 5px;
 }
 .mb-3 {
@@ -332,9 +346,9 @@ h6 {
     box-sizing: border-box;
     margin-left: 10px;
     margin-right: 10px;
-    -webkit-box-shadow: 8px 9px 2px -3px rgba(30,92,141,1);
-    -moz-box-shadow: 8px 9px 2px -3px rgba(30,92,141,1);
-    box-shadow: 8px 9px 2px -3px rgba(30,92,141,1);
+    -webkit-box-shadow: 5px 5px 0 0 rgba(30,92,141,1);
+    -moz-box-shadow: 5px 5px 0 0 rgba(30,92,141,1);
+    box-shadow: 5px 5px 0 0 rgba(30,92,141,1);
     margin-bottom: 40px;
     padding-bottom: 10px;
 }
@@ -440,7 +454,7 @@ h6 {
     background-image: url(../images/fondo-tips.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px;
+    padding: 7.5px
     text-align: center;
     -webkit-box-shadow: 8px 8px 2px -3px rgba(208,117,43,1);
     -moz-box-shadow: 8px 8px 2px -3px rgba(208,117,43,1);
@@ -681,7 +695,7 @@ textarea::placeholder {
 }
 button {
     background-color: #ffdb00;
-    font-family:'ralewaysemibold'; 
+    font-family:'ralewaysemibold';
     font-size: 15px;
     padding: 12px 30px;
     letter-spacing: 3px;
