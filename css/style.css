@@ -571,6 +571,7 @@ h6 {
 .contacto h1 {
     color: #000;
     padding-bottom: 25px;
+    padding-top: 20px
 }
 .contacto a {
     color: #000;
@@ -583,5 +584,107 @@ h6 {
 }
 .redes img {
     padding-right: 5px;
+}
+.wp {
+    display: inline-block;
+    background-color: #2a73ae;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(155,195,195,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(155,195,195,1);
+    box-shadow: 10px 10px 5px 0px rgba(155,195,195,1);
+    text-align: center;
+    padding: 20px 30px;
+    margin-top: 10px;
+    position: relative;
+}
+.wp img {
+    position: absolute;
+    left: -30px;
+    top: 22px;
+}
+.wp h4 {
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+.wp h5 {
+    font-family: 'montserratbold';
+    font-size: 22px;
+    display: inline;
+    color: #fff;
+    letter-spacing: 5px;
+}
+.amarillo {
+    color: #ffdb00;
+}
+.celeste {
+    color: #97cece;
+}
+.rosa {
+    color: #e2a7c1;
+}
+.naranja {
+    color: #eb8748;
+}
+.formulario {
+    padding-top: 120px;
+    padding-bottom: 90px;
+}
+.formulario p, img {
+    display: inline;
+}
+.formulario span {
+    display: flex;
+    justify-content: space-between;
+}
+.formulario span input:last-child {
+    margin-left: 10px;
+}
+form {
+    padding-top: 10px;
+    text-align: end;
+}
+input {
+    background-color: #a5e2e2;
+    width: 100%;
+    font-family: 'ralewayregular';
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #000;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+input::placeholder {
+    font-family: 'ralewayregular';
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #000;
+}
+textarea {
+    background-color: #a5e2e2;
+    width: 100%;
+    font-family: 'ralewayregular';
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #000;
+    text-transform: uppercase;
+    padding: 10px;
+    height: 130px;
+}
+textarea::placeholder {
+    font-family: 'ralewayregular';
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #000;
+}
+button {
+    background-color: #ffdb00;
+    font-family:'ralewaysemibold'; 
+    font-size: 15px;
+    padding: 12px 30px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    -webkit-box-shadow: 7px 7px 4px 0px rgba(155,195,195,1);
+    -moz-box-shadow: 7px 7px 4px 0px rgba(155,195,195,1);
+    box-shadow: 7px 7px 4px 0px rgba(155,195,195,1);
 }
 /*Fin de sección contacto*/
