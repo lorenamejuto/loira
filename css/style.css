@@ -706,5 +706,33 @@ button {
 /*Seccion Footer*/
 footer {
     background-color: #35a99e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+}
+footer p {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+.datos {
+    position: relative;
+}
+.datos input {
+    background-color: #fff;
+    padding: 20px 10px;
+}
+.datos button {
+    right: -40px;
+    top: 21px;
+    padding: 10px 20px;
+    position: absolute;
+}
+.seguinos span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*Fin Seccion footer*/
