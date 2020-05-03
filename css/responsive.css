@@ -1,0 +1,75 @@
+@media (max-width: 992px) {
+  .carousel-control-next {
+    right: 5px;
+  }
+  .carousel-control-prev {
+    left: 5px;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    background-size: 70%;
+    width: 36px;
+    height: 46px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-control-next, .carousel-control-prev {
+    display: none;
+  }
+
+  .carousel-frase h1 {
+    font-size: 70px;
+  }
+
+  .carousel-frase h4 {
+    font-size: 30px;
+  }
+
+  .carousel-frase-ribbon {
+    bottom: -31px;
+  }
+}
+
+@media (max-width: 567px) {
+  .carousel-indicators {
+    display: none;
+  }
+  .carousel-frase h1 {
+    font-size: 40px;
+  }
+
+  .carousel-frase h4 {
+    font-size: 15px;
+  }
+
+  .carousel-frase {
+    top: 66%;
+    transform: translate(-50%, -68%);
+  }
+
+  .carousel-frase h4 {
+    margin-top: -11px;
+    padding-left: 81px;
+  }
+  .ribbon-content {
+    font-size: 12px;
+    letter-spacing: 0.8px;
+  }
+
+  .ribbon:before {
+    left: -18px;
+    border-right-width: 6.5em;
+    border: 12px solid #ffdb00;
+    border-left-color: transparent;
+  }
+
+  .ribbon:after {
+    right: -18px;
+    border: 12px solid #ffdb00;
+    border-right-color: transparent;
+  }
+
+  .ribbon {
+    padding: 0;
+  }
+}
