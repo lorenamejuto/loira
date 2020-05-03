@@ -573,8 +573,6 @@ hr {
 }
 .firma {
     text-align: right;
-}
-.firma h1 {
     font-size: 40px;
     color: #000;
 }
@@ -705,3 +703,8 @@ button {
     box-shadow: 7px 7px 4px 0px rgba(155,195,195,1);
 }
 /*Fin de sección contacto*/
+/*Seccion Footer*/
+footer {
+    background-color: #35a99e;
+}
+/*Fin Seccion footer*/
