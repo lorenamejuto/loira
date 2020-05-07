@@ -150,8 +150,11 @@ hr {
 .navbar-collapse ul {
     margin: 0;
 }
+.navbar-nav a img {
+    width: 39px;
+}
 .navbar-expand-lg .navbar-nav .nav-link {
-    font-size: 15px;
+    font-size: 12px;
     text-transform: uppercase;
     position: relative;
     margin-left: 35px;
@@ -168,7 +171,7 @@ hr {
 .nav-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 .nav-item a {
     color: #231f20;
@@ -296,7 +299,14 @@ hr {
  border-left-width: 1.5em;
  border-right-color: transparent;
 }
-
+.btn-wp{    
+    position: fixed;
+    z-index: 4;
+    bottom: 40px;
+    right: 30px;
+    display: inline-block;
+    padding: 0;
+ }
 /*Fin carousel Principal*/
 /*Sección productos*/
 .productos {
@@ -374,23 +384,27 @@ hr {
     display: inline-block;
     max-width: 151px;
 }
-.caracteristicas .imagenes {
+.caracteristicas .caracteristicas-imagenes {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.caracteristicas .imagenes:nth-child(2) {
-    padding-bottom: 20px;
+.caracteristicas .caracteristicas-imagenes:nth-child(2) {
+    padding-bottom: 29px;
 }
-.caracteristicas .imagenes .alineado {
+.caracteristicas .caracteristicas-imagenes .alineado {
     padding-bottom: 63px;
 }
 .caracteristicas .alineacion-baja {
     padding-bottom: 30px;
 }
+.caracteristicas-suelas {
+    text-align: right;
+}
 /*Sección Galeria*/
 .galeria {
     padding-top: 50px;
+    text-align: center;
 }
 .galeria article {
     position: relative;
@@ -431,13 +445,13 @@ hr {
     background-image: url(../images/galeria-peq-1.jpg);
 }
 .galeria .galeria-dos {
-    background-image: url(../images/galeria-peq-1.jpg);
+    background-image: url(../images/galeria-peq-2.jpg);
 }
 .galeria .galeria-tres {
-    background-image: url(../images/galeria-peq-1.jpg);
+    background-image: url(../images/galeria-peq-3.jpg);
 }
 .galeria .galeria-cuatro {
-    background-image: url(../images/galeria-peq-1.jpg);
+    background-image: url(../images/galeria-peq-4.jpg);
 }
 /*Fin de sección galeria*/
 /*Fin de sección caracteristicas*/
@@ -452,11 +466,11 @@ hr {
     background-image: url(../images/fondo-tips.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 7.5px
+    padding: 7.5px;
     text-align: center;
-    -webkit-box-shadow: 8px 8px 2px -3px rgba(208,117,43,1);
-    -moz-box-shadow: 8px 8px 2px -3px rgba(208,117,43,1);
-    box-shadow: 8px 8px 2px -3px rgba(208,117,43,1);
+    -webkit-box-shadow: 4px 4px 0 0 rgba(208,117,43,1);
+    -moz-box-shadow: 4px 4px 0 0 rgba(208,117,43,1);
+    box-shadow: 4px 4px 0 0 rgba(208,117,43,1);
     margin-bottom: 40px;
 }
 .semi-circulo {
@@ -473,6 +487,7 @@ hr {
     color: #000;
     margin-bottom: 0;
     margin-left: -20px;
+    margin-top: 0;
 }
 .semi-circulo h3 {
     color: #000;
@@ -482,6 +497,18 @@ hr {
     margin-top: 0;
     letter-spacing: 4px;
     margin-top: -2px;
+}
+.sec-amarillo .cuidado-calzado {-webkit-box-shadow: 5px 5px 0px 0px rgba(255,241,153,1);
+-moz-box-shadow: 5px 5px 0px 0px rgba(255,241,153,1);
+box-shadow: 5px 5px 0px 0px rgba(255,241,153,1);
+}
+.sec-celeste {
+    padding-top: 0;
+  }
+.sec-celeste .talle {
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(155,195,195,1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(155,195,195,1);
+    box-shadow: 5px 5px 0px 0px rgba(155,195,195,1);
 }
 .sec-amarillo .semi-circulo {
     background-color: rgba(255, 219, 0, 0.4);
@@ -494,7 +521,7 @@ hr {
     background-image: url(../images/fondo-cuidado.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px 70px;
+    padding: 54px 70px;
     text-align: center;
 }
 .cuidado-calzado span {
@@ -537,6 +564,10 @@ hr {
 }
 /*Fin de sección Tips*/
 /*Seccion nosotras*/
+.nosotras {
+    margin-bottom: 60px;
+    text-align: left;
+}
 .univ-loria h1 {
     color: #000;
     display: inline-block;
@@ -560,6 +591,7 @@ hr {
     -moz-box-shadow: 8px 9px 2px -3px rgba(203,131,163,0.77);
     box-shadow: 8px 9px 2px -3px rgba(203,131,163,0.77);
     margin-bottom: 45px;
+    margin-top: 0;
 }
 .texto-universo h5 {
     background-color: inherit;
@@ -580,6 +612,8 @@ hr {
     background-image: url(../images/fondo-contacto.png);
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: left;
+    margin-bottom: 65px;
 }
 .contacto h1 {
     color: #000;
@@ -641,7 +675,7 @@ hr {
     padding-top: 120px;
     padding-bottom: 90px;
 }
-.formulario p, img {
+.formulario p, .formulario img {
     display: inline;
 }
 .formulario span {
@@ -704,10 +738,8 @@ button {
 /*Seccion Footer*/
 footer {
     background-color: #35a99e;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 20px;
+    padding: 20px 0;
+  
 }
 footer p {
     text-transform: uppercase;
@@ -715,22 +747,41 @@ footer p {
     letter-spacing: 3px;
     margin-bottom: 5px;
 }
+.pie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
 .datos {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
 }
 .datos input {
     background-color: #fff;
     padding: 20px 10px;
+    width: 90%;
 }
 .datos button {
-    right: -40px;
+    right: 6px;
     top: 21px;
     padding: 10px 20px;
     position: absolute;
+}
+.seguinos {
+    text-align: center;
 }
 .seguinos span {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.borde {
+    display: inline-block;
+    padding: 0 10px;
+}
+
 /*Fin Seccion footer*/

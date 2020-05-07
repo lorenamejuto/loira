@@ -1,4 +1,12 @@
-@media (max-width: 992px) {
+@media (max-width: 1199px) {
+  .caracteristicas-imagenes img:nth-child(2) {
+    max-width: 392px;
+  }
+  .cuidado-calzado {
+    padding: 35px 70px;
+  }
+}
+@media (max-width: 991px) {
   .carousel-control-next {
     right: 5px;
   }
@@ -10,9 +18,33 @@
     width: 36px;
     height: 46px;
   }
+  .caracteristicas-imagenes img:first-child, .caracteristicas-imagenes img:last-child {
+    display: none;
+  }
+  .caracteristicas-imagenes img:nth-child(2) {
+    padding: 0 20px;
+  }
+  .sec-celeste {
+    padding-top: 40px;
+  }
+  .nosotras {
+    text-align: center;
+  }
+  .univ-loria {
+    margin-top: 40px;
+  }
+  .contacto {
+    text-align: center;
+  }
+  .borde {
+    display: none;
+  }
+  .datos, .pie {
+    margin-bottom: 15px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .carousel-control-next, .carousel-control-prev {
     display: none;
   }
@@ -27,6 +59,29 @@
 
   .carousel-frase-ribbon {
     bottom: -31px;
+  }
+  .caracteristicas .texto {
+    max-width: inherit;
+  }
+  .caracteristicas-imagenes {
+    order: 2;
+  }
+  .caracteristicas-suelas {
+    order: 3;
+    text-align: center;
+  }
+  .caracteristicas-costuras {
+    order: 1;
+    text-align: center;
+  }
+  .alineacion-baja {
+    display: flex;
+  }
+  .btn-wp {
+    right: -50px;
+  }
+  .btn-wp img {
+    width: 60%;
   }
 }
 
@@ -71,5 +126,25 @@
 
   .ribbon {
     padding: 0;
+  }
+  .caracteristicas h1 {
+    font-size: 58px;
+  }
+  .caracteristicas h2 {
+    font-size: 37px;
+  }
+  .semi-circulo {
+    width: 275px;
+    height: 125px;
+  }
+  .semi-circulo h1 {
+    font-size: 56px;
+    margin-top: -15px;
+  }
+  .semi-circulo h3 {
+    font-size: 15px;
+  }
+  .cuidado-calzado {
+    padding: 35px 30px;
   }
 }
