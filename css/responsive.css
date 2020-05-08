@@ -95,6 +95,9 @@
   .btn-wp img {
     width: 60%;
   }
+  .caracteristicas-imagenes img:nth-child(2) {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 567px) {
