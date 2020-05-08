@@ -439,15 +439,22 @@
         </div>
         <div class="col-12 col-lg-6 formulario">
           <p>Dejanos tus consultas y comentarios!</p> <img src="images/corazon.png" alt="corazon">
-          <form id="c_form" name="contact">
-            <input type="text" placeholder="Nombre y Apellido" name="" id="">
-            <span>
-              <input type="tel" placeholder="telefono" name="" id="">
-              <input type="email" placeholder="E-mail" name="" id="">
-            </span>
-            <textarea placeholder="Mensaje" name="" id=""></textarea>
-            <button id="" name="" type="submit">ENVIAR</button>
-          </form>
+          <span id="contactform">
+            <form id="c_form" name="contact">
+              <input type="text" placeholder="Nombre y Apellido" name="nombre" id="c_nombre">
+              <span>
+                <input type="tel" placeholder="telefono" name="telefono" id="c_telefono">
+                <input type="email" placeholder="E-mail" name="email" id="c_email">
+              </span>
+              <textarea placeholder="Mensaje" name="consulta" id="c_consulta"></textarea>
+              <button id="c_enviar" name="send" onclick="cargaSendMail()" type="button">ENVIAR</button>
+              <p id="nombre-box"></p>
+              <p id="email-box"></p>
+              <div id="c_information">
+                <p></p>
+              </div>
+            </form>
+          </span>
         </div>
       </div>
     </div>
@@ -457,34 +464,34 @@
   <footer class="container-fluid">
     <div class="container">
       <div class="row">
-        
+
         <div class="col-12 col-lg-2 pie">
           <img src="images/loira-footer.png" alt="loira">
           <img class="borde" src="images/borde-d-footer.png" alt="borde">
         </div>
-    
+
         <div class="col-12 col-lg-5 datos">
           <p>RECIBÍ TODAS LAS NOVEDADES</p>
           <input type="email" placeholder="E-mail" name="">
           <button>ok</button>
         </div>
-    
+
         <div class="col-12 col-lg-3 pie">
           <img class="borde" src="images/borde-i-footer.png" alt="borde">
           <div class="seguinos">
             <p>SEGUINOS EN NUESTRAS REDES</p>
             <span>
-              <a href="https://www.facebook.com/loira.indumentaria" target="_blank"><img src="images/face-footer.png" alt="facebook"></a> 
-              <a href="https://www.instagram.com/loiracolegial" target="_blank"><img src="images/ig-footer.png" alt="instagram"></a> 
+              <a href="https://www.facebook.com/loira.indumentaria" target="_blank"><img src="images/face-footer.png" alt="facebook"></a>
+              <a href="https://www.instagram.com/loiracolegial" target="_blank"><img src="images/ig-footer.png" alt="instagram"></a>
             </span>
           </div>
         </div>
-    
+
         <div class="col-12 col-lg-2 pie">
           <img class="borde" src="images/borde-d-footer.png" alt="borde">
           <a href="http://estudiosalto.com.ar" target="_blank"><img src="images/salto-footer.png" alt="salto"></a>
         </div>
-  
+
   </footer>
   <!--Fin footer-->
 

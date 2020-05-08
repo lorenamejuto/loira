@@ -42,6 +42,18 @@
   .datos, .pie {
     margin-bottom: 15px;
   }
+  .navbar-collapse ul {
+    background-image: none;
+  }
+  .navbar-brand img {
+    max-width: 105px;
+  }
+  .navbar {
+    padding: 10px 20px;
+  }
+  .carousel {
+    padding-top: 85px;
+  }
 }
 
 @media (max-width: 767px) {

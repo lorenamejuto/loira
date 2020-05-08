@@ -137,18 +137,23 @@ hr {
 /*Navbar*/
 
 .navbar {
-    padding: 0 20px 5px;
+    padding: 0 0 0 20px;
     background-color: #fff;
 }
 .navbar-brand {
   display: flex;
   align-items: center;
+  min-width: 100px;
 }
 .navbar-collapse {
     justify-content: flex-end;
 }
 .navbar-collapse ul {
     margin: 0;
+    background-image: url(../images/guarda-header.png);
+    background-repeat: repeat-x;
+    background-position: bottom right;
+    padding-bottom: 10px;
 }
 .navbar-nav a img {
     width: 39px;
@@ -181,6 +186,10 @@ hr {
 }
 .nav-item:nth-child(7) .nav-link {
     margin-right: 0;
+    width: 54px;
+}
+.nav-item:last-child .nav-link {
+    width: 54px;
 }
 .nav-link.active {
     font-weight: 700;
@@ -198,6 +207,7 @@ hr {
 }
 .navbar-toggler {
   padding: 0;
+  box-shadow: none;
 }
 /*Fin Navbar*/
 
@@ -299,7 +309,7 @@ hr {
  border-left-width: 1.5em;
  border-right-color: transparent;
 }
-.btn-wp{    
+.btn-wp{
     position: fixed;
     z-index: 4;
     bottom: 40px;
@@ -739,7 +749,7 @@ button {
 footer {
     background-color: #35a99e;
     padding: 20px 0;
-  
+
 }
 footer p {
     text-transform: uppercase;
