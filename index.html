@@ -121,7 +121,7 @@
           <hr>
           <h3>guillermina</h3>
           <p>27 al 36</p>
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <ul class="nav nav-pills mb-3" id="pills-tab-guillermina" role="tablist">
               <li class="nav-item">
                 <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><img src="images/boton-1.png" alt="botón"></a>
               </li>
@@ -138,7 +138,7 @@
           <hr>
           <h3>náuticos</h3>
           <p>27 al 43</p>
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <ul class="nav nav-pills mb-3" id="pills-tab-nauticos" role="tablist">
               <li class="nav-item">
                 <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home2" role="tab" aria-controls="pills-home" aria-selected="true"><img src="images/boton-1.png" alt="botón"></a>
               </li>
@@ -155,8 +155,8 @@
           <hr>
           <h3>náuticos c/abrojo</h3>
           <p>27 al 36</p>
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-              <li class="nav-item">
+          <ul class="nav nav-pills mb-3" id="pills-tab-abrojo" role="tablist">
+              <li class="nav-item" id="caracteristicas">
                 <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home3" role="tab" aria-controls="pills-home" aria-selected="true"><img src="images/boton-1.png" alt="botón"></a>
               </li>
               <li class="nav-item">
@@ -167,9 +167,23 @@
       </div>
     </div>
   </section>
+  <script>
+    $('#pills-tab-guillermina a').on('mouseover', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    });
+    $('#pills-tab-nauticos a').on('mouseover', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    });
+    $('#pills-tab-abrojo a').on('mouseover', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+  </script>
   <!-- Fin de sección Productos-->
   <!-- Sección Caracteristicas-->
-  <section class="container-fluid caracteristicas" id="caracteristicas">
+  <section class="container-fluid caracteristicas">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -180,18 +194,18 @@
         </div>
       </div>
       <div class="row alineacion-baja">
-        <div class="col-12 col-md-3 caracteristicas-suelas">
+        <div class="col-12 col-md-2 caracteristicas-suelas">
 					<span class="texto">
 	          <p><b>SUELAS</b><br>Ejercen un efecto amortiguador entre el pie y el suelo.</p>
 						<p>Son altas, cómodas, y acompañan el movimiento del pie para caminar.</p>
 					</span>
         </div>
-        <div class="col-12 col-md-6 caracteristicas-imagenes">
+        <div class="col-12 col-md-8 caracteristicas-imagenes">
           <img src="images/marcador-izq.png" alt="marcador">
           <img src="images/zapato-modelo.png" alt="zapato caracteristicas">
           <img class="alineado" src="images/marcador-dere.png" alt="marcador">
         </div>
-        <div class="col-12 col-md-3 caracteristicas-costuras">
+        <div class="col-12 col-md-2 caracteristicas-costuras">
 					<span class="texto">
           	<p><b>COSTURAS</b><br>Los zapatos tienen costuras reforzadas y pegados.</p>
 						<p>Además de tener costura de refuerzo (atraques).</p>
@@ -363,7 +377,7 @@
                   <td>36.0</td>
                   <td>23.0</td>
                 </tr>
-                <tr class="fondo-blanco">
+                <tr class="fondo-blanco" id="nosotras">
                   <td>4.5y</td>
                   <td>4.0</td>
                   <td>36.5</td>
@@ -389,7 +403,7 @@
     </section>
     <!--Fin de sección Tips-->
     <!--Sección nosotras-->
-    <section class="container-fluid nosotras" id="nosotras">
+    <section class="container-fluid nosotras">
       <div class="container">
         <div class="row espacio">
           <div class="col-12 col-lg-6">
@@ -403,10 +417,10 @@
           <div class="texto-universo">
             <p>Somos Coni y Flor, dos hermanas que decidimos emprender este camino juntas y acompañar a las madres en el crecimiento de sus hijos.</p>
             <p>Confeccionamos zapatos y zapatillas escolares, estando presentes en cada detalle del proceso, desde el diseño hasta la entrega a cada mamá.</p>
-            <h5><b>en loira colegial te acompañamos para que cada paso sea inolvidable.</b></h5>
+            <h5>en loira colegial te acompañamos para que cada paso sea inolvidable.</h5>
             <p>Coni, diseñadora de indumentaria, mamá de Simona y amante del diseño. Flor, Lic. En Administración, mamá de mellizos, Sofi y Pipe y fan de la vida al aire libre.</p>
             <p><b>¡Calzate los zapatos y viví con nosotras esta gran aventura!</b></p>
-           <h1 class="firma">Coni & Flor</h1>
+           <h1 class="firma" id="contacto">Coni & Flor</h1>
           </div>
         </div>
       </div>
@@ -414,7 +428,7 @@
   </section>
   <!--Fin de Sección nosotras-->
   <!--Sección contacto-->
-  <section class="container-fluid contacto" id="contacto">
+  <section class="container-fluid contacto">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6">

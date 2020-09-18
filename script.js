@@ -1,3 +1,19 @@
+//
+function activeBotonNavbar() {
+    document.addEventListener('click', function () {
+
+        if (!event.target.classList.contains('nav-link')) return;
+        event.target.classList.add('active');
+        var links = document.querySelectorAll('.nav-link');
+        for (var i = 0; i < links.length; i++) {
+            if (links[i] === event.target) continue;
+            links[i].classList.remove('active');
+        }
+
+    }, false);
+}
+
+
 function cargaSendMail() {
     $("#c_enviar").attr("disabled", true);
     $(".c_error").remove();
@@ -59,3 +75,7 @@ function cargaSendMail() {
         $("#c_enviar").removeAttr("disabled");
     }
 }
+
+$(document).ready(function() {
+    activeBotonNavbar();
+});

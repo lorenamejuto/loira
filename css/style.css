@@ -188,6 +188,9 @@ hr {
     margin-right: 0;
     width: 54px;
 }
+.nav-item:nth-child(7) .nav-link:hover, .nav-item:last-child .nav-link:hover {
+  opacity: .6;
+}
 .nav-item:last-child .nav-link {
     width: 54px;
 }
@@ -317,6 +320,9 @@ hr {
     display: inline-block;
     padding: 0;
  }
+ .btn-wp:hover {
+   opacity: .9;
+ }
 /*Fin carousel Principal*/
 /*Sección productos*/
 .productos {
@@ -392,7 +398,6 @@ hr {
 }
 .caracteristicas .texto {
     display: inline-block;
-    max-width: 151px;
 }
 .caracteristicas .caracteristicas-imagenes {
     display: flex;
@@ -400,16 +405,17 @@ hr {
     align-items: center;
 }
 .caracteristicas .caracteristicas-imagenes:nth-child(2) {
-    padding-bottom: 29px;
+    padding: 0;
 }
 .caracteristicas .caracteristicas-imagenes .alineado {
     padding-bottom: 63px;
 }
 .caracteristicas .alineacion-baja {
-    padding-bottom: 30px;
+    padding: 30px 40px;
 }
-.caracteristicas-suelas {
+.caracteristicas-suelas, .caracteristicas-costuras {
     text-align: right;
+    padding: 0;
 }
 /*Sección Galeria*/
 .galeria {
@@ -485,8 +491,8 @@ hr {
 }
 .semi-circulo {
     text-align: center;
-    width: 350px;
-    height: 175px;
+    width: 300px;
+    height: 150px;
     -moz-border-radius: 300px 300px 0 0;
     -webkit-border-radius: 300px 300px 0 0;
     border-radius: 300px 300px 0 0;
@@ -495,6 +501,7 @@ hr {
 }
 .semi-circulo h1{
     color: #000;
+    font-size: 60px;
     margin-bottom: 0;
     margin-left: -20px;
     margin-top: 0;
@@ -503,7 +510,7 @@ hr {
     color: #000;
     text-transform: lowercase;
     font-size: 21px;
-    padding-left: 92px;
+    padding-left: 67px;
     margin-top: 0;
     letter-spacing: 4px;
     margin-top: -2px;
@@ -531,7 +538,7 @@ box-shadow: 5px 5px 0px 0px rgba(255,241,153,1);
     background-image: url(../images/fondo-cuidado.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 54px 70px;
+    padding: 54px 45px;
     text-align: center;
 }
 .cuidado-calzado span {
@@ -592,18 +599,19 @@ box-shadow: 5px 5px 0px 0px rgba(255,241,153,1);
 }
 .univ-loria {
     display: inline-block;
-    background-image: url(../images/fondo-productos.jpg);
+    background-image: url(../images/fondo-universo.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     text-align: center;
-    -webkit-box-shadow: 8px 9px 2px -3px rgba(203,131,163,0.77);
-    -moz-box-shadow: 8px 9px 2px -3px rgba(203,131,163,0.77);
-    box-shadow: 8px 9px 2px -3px rgba(203,131,163,0.77);
+   -webkit-box-shadow: 5px 5px 0px 0px rgba(203,131,163,1);
+-moz-box-shadow: 5px 5px 0px 0px rgba(203,131,163,1);
+box-shadow: 5px 5px 0px 0px rgba(203,131,163,1);
     margin-bottom: 45px;
     margin-top: 0;
 }
 .texto-universo h5 {
+    font-family: 'ralewaymedium';
     background-color: inherit;
     text-transform: uppercase;
     font-size: 18px;
@@ -628,7 +636,8 @@ box-shadow: 5px 5px 0px 0px rgba(255,241,153,1);
 .contacto h1 {
     color: #000;
     padding-bottom: 25px;
-    padding-top: 20px
+    padding-top: 20px;
+    font-size: 60px;
 }
 .contacto a {
     color: #000;
@@ -638,6 +647,9 @@ box-shadow: 5px 5px 0px 0px rgba(255,241,153,1);
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+}
+.redes:hover p {
+  text-decoration: underline;
 }
 .redes img {
     padding-right: 5px;
@@ -649,22 +661,23 @@ box-shadow: 5px 5px 0px 0px rgba(255,241,153,1);
     -moz-box-shadow: 10px 10px 5px 0px rgba(155,195,195,1);
     box-shadow: 10px 10px 5px 0px rgba(155,195,195,1);
     text-align: center;
-    padding: 20px 30px;
+    padding: 10px 20px;
     margin-top: 10px;
     position: relative;
 }
 .wp img {
     position: absolute;
-    left: -30px;
-    top: 22px;
+    left: -38px;
+    top: 6px;
 }
 .wp h4 {
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 5px;
+    margin-bottom: 3px;
 }
 .wp h5 {
     font-family: 'montserratbold';
-    font-size: 22px;
+    font-size: 21px;
     display: inline;
     color: #fff;
     letter-spacing: 5px;
@@ -704,17 +717,17 @@ input {
     width: 100%;
     font-family: 'ralewayregular';
     font-size: 13px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #000;
-    text-transform: uppercase;
     padding: 10px;
     margin-bottom: 15px;
 }
 input::placeholder {
     font-family: 'ralewayregular';
     font-size: 13px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #000;
+    text-transform: uppercase;
 }
 textarea {
     background-color: #a5e2e2;
@@ -740,15 +753,18 @@ button {
     padding: 12px 30px;
     letter-spacing: 3px;
     margin-top: 10px;
-    -webkit-box-shadow: 7px 7px 4px 0px rgba(155,195,195,1);
-    -moz-box-shadow: 7px 7px 4px 0px rgba(155,195,195,1);
-    box-shadow: 7px 7px 4px 0px rgba(155,195,195,1);
+    -webkit-box-shadow: 7px 7px 4px 0 rgba(155,195,195,1);
+    -moz-box-shadow: 7px 7px 4px 0 rgba(155,195,195,1);
+    box-shadow: 7px 7px 4px 0 rgba(155,195,195,1);
+}
+#c_enviar:hover {
+  background-color: #f5d92f;
 }
 /*Fin de sección contacto*/
 /*Seccion Footer*/
 footer {
     background-color: #35a99e;
-    padding: 20px 0;
+    padding: 10px 0;
 
 }
 footer p {
@@ -767,19 +783,25 @@ footer p {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     margin-bottom: 0;
 }
 .datos input {
     background-color: #fff;
-    padding: 20px 10px;
+    padding: 13px;
     width: 90%;
 }
 .datos button {
-    right: 6px;
-    top: 21px;
-    padding: 10px 20px;
+    right: 33px;
+    top: 18px;
+    padding: 5px 10px;
     position: absolute;
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(69,124,123,1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(69,124,123,1);
+    box-shadow: 5px 5px 0px 0px rgba(69,124,123,1);
+}
+.datos button:hover {
+  background-color: #f5d92f;
 }
 .seguinos {
     text-align: center;
@@ -789,9 +811,20 @@ footer p {
     justify-content: center;
     align-items: center;
 }
+.seguinos a:hover {
+  opacity: .8;
+}
 .borde {
     display: inline-block;
     padding: 0 10px;
+}
+
+#c_information {
+  margin-top: 10px;
+}
+
+.c_error {
+  color: #e44747;
 }
 
 /*Fin Seccion footer*/
